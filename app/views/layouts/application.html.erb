@@ -7,7 +7,7 @@
   <title><%= yield(:meta_title) %></title>
   <%= stylesheet_link_tag "application" %>
   <%= csrf_meta_tags %>
-  <%= auto_discovery_link_tag :rss, "http://feeds.feedburner.com/rubyjobsru", { :title => t("layouts.application.meta_title") } %>
+  <%= auto_discovery_link_tag :rss, "http://feeds.feedburner.com/flashjobsru", { :title => t("layouts.application.meta_title") } %>
   <%= favicon_link_tag %>
 </head>
 <body>
@@ -31,34 +31,9 @@
         <%= yield %>
       </div>
     </div>
-    <% if current_page?(root_url) %>
-    <hr />
-    <div class="row content-section">
-      <div class="span4 sidebar">
-        <h1>Интересные события и проекты</h1>
-      </div>
-      <div class="span12">
-        <div class="row">
-          <div class="span6">
-            <p><%= link_to image_tag("rubyflow135x80.png", :size => "135x80"), "http://rubyflow.ru/" %></p>
-            <p>Коллективный блог сообщества разработчиков.</p>
-            <p>Более 1 200 статей на тему Ruby, Rails, Sinatra и других известных и не очень библиотек. Советы, обзоры и примеры кода.</p>
-            <p>Формат коллективного блога позволяет каждому опубликовать статью. Без регистрации :)</p>
-            <p><%= link_to 'http://rubyflow.ru', 'http://rubyflow.ru' %></p>
-          </div>
-          <div class="span6">
-            <p><%= link_to image_tag("rubyhire200x80.png", :size => "200x80"), "http://www.rubyhire.me/" %></p>
-            <p>Есть мнение, что на современном рынке веб-разработки спрос на Ruby on Rails программистов превышает предложение квалифицированных кадров.</p>
-            <p>Задача этого проекта доказать, что хорошие специалисты есть всегда и нужно лишь помочь работодателям и разработчикам найти друг друга.</p>
-            <p><%= link_to 'http://www.rubyhire.me', 'http://www.rubyhire.me' %></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <% end %>
     <footer class="row footer">
       <div class="span4">
-        <p>&copy;&nbsp;2008&mdash;2012, <%= link_to "Alex Soulim", "http://soulim.com" %></p>
+        <p>&copy;2011&mdash;2012, <%= link_to "Adumentum", "http://adumentum.com" %></p>
       </div>
       <div class="span6">
         <p><%= t(".hosting", :link => link_to(content_tag(:span, "locum.ru", :class => "label"), "http://locum.ru?code=f07cb8b5a66f6116967a13f8b2818e45fb644306")).html_safe %></p>
@@ -76,19 +51,19 @@
   <%= javascript_include_tag "application" %>
   <%= yield(:js) %>
   <% if Rails.env.production? %>
-  <script type="text/javascript">
-  
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-391915-13']);
-  _gaq.push(['_trackPageview']);
-  
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  
-  </script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-30061155-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
   <% end %>
 </body>
 </html>

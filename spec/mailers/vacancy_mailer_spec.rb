@@ -17,8 +17,8 @@ describe VacancyMailer do
     it "should put email into queue" do
       ActionMailer::Base.deliveries.should_not be_blank
     end
-    it "should deliver message to 'support@rubyjobs.ru'" do
-      @email.to.should include('support@rubyjobs.ru')
+    it "should deliver message to 'support@flashjobs.ru'" do
+      @email.to.should include('support@flashjobs.ru')
     end
   end
 

@@ -1,7 +1,7 @@
 <%# content_for :sidebar %>
 <% content_for :meta_title, t(".meta_title", :vacancy => @vacancy.title) %>
 <% content_for :js do %>
-  <!-- Facebook -->
+  <!-- Facebook
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -46,7 +46,7 @@
       <strong><%= t(".share_links") %></strong><br />
       <ul class="share-buttons">
         <li>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= vacancy_url(@vacancy) %>" data-text="<%= @vacancy.title %>" data-count="none" data-via="rubyjobsru">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= vacancy_url(@vacancy) %>" data-text="<%= @vacancy.title %>" data-count="none" data-via="flashjobsru">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
         </li>
         <li>
           <div class="g-plusone" data-size="medium" data-annotation="none"></div>

@@ -5,7 +5,7 @@ ru:
       update: "Сохранить"
       cancel: "Отмена"
       placeholders:
-        title: "Например, 'Ведущий разработчик' или 'Ruby-ниндзя'"
+        title: "Например, 'Ведущий разработчик' или 'Flash-ниндзя'"
         description: "Для форматирования можно использовать Markdown"
         location: "Город или 'удаленная работа'"
       notes:
@@ -19,22 +19,22 @@ ru:
       legends:
         contacts: "Контактная информация"
     index:
-      meta_title: "Вакансии для разработчиков, использующих Ruby и Rails"
+      meta_title: "Вакансии для разработчиков Flash, Flex, ActionScript"
       sidebar:
-        title: "Вакансии для разработчиков, использующих Ruby"
+        title: "Вакансии для разработчиков Flash, Flex, ActionScript"
         description: "Публикация абсолютно бесплатна и не требует регистрации."
       add: "Добавить вакансию"
     new:
-      meta_title: "Новая вакансия ~ RubyJobs.ru"
+      meta_title: "Новая вакансия ~ FlashJobs.ru"
       sidebar:
         title: "На заметку"
-        description: "Помимо сайта, ваша вакансия будет опубликована в RSS-канале и Твиттере - @rubyjobsru."
+        description: "Помимо сайта, ваша вакансия будет опубликована в RSS-канале и Твиттере - @flashjobsru."
       title: "Новая вакансия"
       create: "Сохранить"
     create:
       success: "**Вакансия добавлена.** Она будет проверена, после чего допущена к публикации"
     show:
-      meta_title: "%{vacancy} ~ RubyJobs.ru"
+      meta_title: "%{vacancy} ~ FlashJobs.ru"
       company: "Компания"
       phone: "Телефон"
       contacts: "Контактная информация"
@@ -46,7 +46,7 @@ ru:
         confirmation: "Подтверждаем удаление вакансии?"
       expiration_notice: "Это архивная вакансия. Срок ее размещения истек %{expire_at}"
     edit:
-      meta_title: "Редактирование описания вакансии ~ RubyJobs.ru"
+      meta_title: "Редактирование описания вакансии ~ FlashJobs.ru"
       title: "Редактирование"
     update:
       success: "**Вакансия обновлена.** Все изменения успешно сохранены"
