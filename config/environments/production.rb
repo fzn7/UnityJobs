@@ -59,9 +59,9 @@ Rbjobs::Application.configure do
   config.active_support.deprecation = :notify
   
   # Set exception notifier
-  #config.middleware.use ExceptionNotifier,
-  #  :email_prefix => "[FlashJobs.ru ~ production] ",
-  #  :sender_address => %{notifier@flashjobs.ru},
-  #  :exception_recipients => %w{support@flashjobs.ru},
-  #  :ignore_crawlers => %w{Googlebot bingbot}
+  config.middleware.use ExceptionNotifier,
+    :email_prefix => "[FlashJobs.ru ~ production] ",
+    :sender_address => %{support@flashjobs.ru},
+    :exception_recipients => %w{support@flashjobs.ru},
+    :ignore_crawlers => %w{Googlebot bingbot}
 end
