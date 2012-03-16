@@ -5,6 +5,9 @@ gem 'jquery-rails'
 gem 'sqlite3', '~> 1.3.4'
 gem 'kaminari', '~> 0.12.4'
 gem 'redcarpet', '~> 2.0.0b5'
+gem 'unicorn'
+gem 'capistrano'
+gem 'therubyracer'
 
 group :staging, :production do
   gem 'postmark-rails', '~> 0.4.1'
