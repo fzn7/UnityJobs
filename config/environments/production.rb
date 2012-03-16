@@ -9,22 +9,16 @@ Rbjobs::Application.configure do
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
-  config.serve_static_assets = false
-
-  # Do not compress assets
-  config.assets.compress = false
-
-  # Expands the lines which load the assets
-  #config.assets.debug = true
+  config.serve_static_assets = true
 
   # Compress JavaScripts and CSS
-  #config.assets.compress = true
+  config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  #config.assets.compile = false
+  config.assets.compile = false
 
   # Generate digests for assets URLs
-  #config.assets.digest = true
+  config.assets.digest = true
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
@@ -65,9 +59,9 @@ Rbjobs::Application.configure do
   config.active_support.deprecation = :notify
   
   # Set exception notifier
-  config.middleware.use ExceptionNotifier,
-    :email_prefix => "[FlashJobs.ru ~ production] ",
-    :sender_address => %{notifier@flashjobs.ru},
-    :exception_recipients => %w{support@flashjobs.ru},
-    :ignore_crawlers => %w{Googlebot bingbot}
+  #config.middleware.use ExceptionNotifier,
+  #  :email_prefix => "[FlashJobs.ru ~ production] ",
+  #  :sender_address => %{notifier@flashjobs.ru},
+  #  :exception_recipients => %w{support@flashjobs.ru},
+  #  :ignore_crawlers => %w{Googlebot bingbot}
 end
