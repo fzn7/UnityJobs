@@ -31,7 +31,7 @@ Rbjobs::Application.configure do
   # config.force_ssl = true
 
   # See everything in the log (default is :info)
-  # config.log_level = :debug
+  config.log_level = :debug
 
   # Use a different logger for distributed setups
   # config.logger = SyslogLogger.new
@@ -60,8 +60,8 @@ Rbjobs::Application.configure do
   
   # Set exception notifier
   config.middleware.use ExceptionNotifier,
-    :email_prefix => "[RubyJobs.ru ~ production] ",
-    :sender_address => %{notifier@rubyjobs.ru},
-    :exception_recipients => %w{support@rubyjobs.ru},
+    :email_prefix => "[FlashJobs.ru ~ production] ",
+    :sender_address => %{notifier@flashjobs.ru},
+    :exception_recipients => %w{support@flashjobs.ru},
     :ignore_crawlers => %w{Googlebot bingbot}
 end
