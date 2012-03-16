@@ -16,7 +16,7 @@ group :staging, :production do
 end
 
 group :development do
-  gem 'letter_opener', '~> 0.0.2'
+  gem 'letter_opener', '~> 0.0.2'          tail
 end
 
 group :development, :test do
