@@ -24,6 +24,7 @@ ru:
         title: "Вакансии для разработчиков Flash, Flex, ActionScript"
         description: "Публикация абсолютно бесплатна и не требует регистрации."
       add: "Добавить вакансию"
+      rss: "RSS Лента"
     new:
       meta_title: "Новая вакансия ~ FlashJobs.ru"
       sidebar:

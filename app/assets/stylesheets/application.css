@@ -26,6 +26,11 @@
 .sidebar .tips {
   margin-bottom:65px;  
 }
+
+.sidebar .rss {
+    margin-top: 35px;
+}
+
 .sidebar .delivery-methods a {
   color:#808080;
 }

@@ -3,6 +3,11 @@
   <h1><%= t(".sidebar.title") %></h1>
   <p><%= t(".sidebar.description") %></p>
   <p><%= link_to t(".add"), new_vacancy_url, :class => "large btn primary" %></p>
+
+  <div class="rss">
+    <p><%= link_to image_tag("feed_rss_icon.png", :size => "48x48", :alt => t(".rss")), vacancies_path(:xml) %></p>
+    <p><%= link_to t(".rss"), vacancies_path(:xml), :class => "h3", %></p>
+  </div>
 <% end %>
 
 <% @vacancies.in_groups_of(2, false) do |group| %>
